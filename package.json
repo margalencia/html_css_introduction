@@ -1,0 +1,62 @@
+{
+  "name": "shower-ribbon",
+  "description": "Ribbon theme for Shower HTML presentation engine",
+  "version": "2.0.0",
+  "author": {
+    "name": "Vadim Makeev",
+    "url": "http://pepelsbey.net/"
+  },
+  "homepage": "https://github.com/shower/ribbon",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shower/ribbon.git"
+  },
+  "bugs": {
+    "url": "http://github.com/shower/shower/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "shower",
+    "presentation",
+    "ribbon",
+    "theme"
+  ],
+  "scripts": {
+    "dev": "gulp",
+    "styles": "gulp styles"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-header": "^1.7.1",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-sass": "^2.1.1"
+  },
+  "gitHead": "b7e3ed320028d44d220adb9c1e2ef6098c9b92e6",
+  "_id": "shower-ribbon@2.0.0",
+  "_shasum": "521820df0d88c8104dd046ecc50771f64e878bf6",
+  "_from": "shower-ribbon@*",
+  "_npmVersion": "3.3.12",
+  "_nodeVersion": "5.1.1",
+  "_npmUser": {
+    "name": "pepelsbey",
+    "email": "pepelsbey@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "pepelsbey",
+      "email": "pepelsbey@gmail.com"
+    },
+    {
+      "name": "zloylos",
+      "email": "i@zloylos.me"
+    }
+  ],
+  "dist": {
+    "shasum": "521820df0d88c8104dd046ecc50771f64e878bf6",
+    "tarball": "http://registry.npmjs.org/shower-ribbon/-/shower-ribbon-2.0.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/shower-ribbon/-/shower-ribbon-2.0.0.tgz"
+}
