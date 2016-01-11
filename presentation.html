@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<title>Введение в HTML и CSS</title>
 	<meta charset="utf-8">
@@ -19,12 +19,7 @@
 		<h2>Введение в HTML и CSS</h2>
 	</section>
 	<section class="slide">
-		<h2>Инструменты</h2>
-		<ul lang="ru">
-			<li class="next">Текстовые редакторы и IDE</li>
-			<li class="next">Инструменты разработчика в браузерах</li>
-			<li class="next">Adobe Photoshop для работы с макетами дизайна</li>
-		</ul>
+		<h2 class="shout">Инструменты</h2>
 	</section>
 	<section class="slide">
 		<h2>Текстовые редакторы и IDE</h2>
@@ -60,22 +55,120 @@
 	<section class="slide">
 		<h2>Источники информации</h2>
 		<ul lang="ru">
-			<li>Спецификация</li>
-            <li>Книги</li>
-            <li>Конференции</li>
-            <li>MDN</li>
-            <li>Блоги</li>
-            <li>Twitter</li>
+			<li>Спецификации <a href="https://www.w3.org/" target="_blank">W3C</a>: <a href="https://www.w3.org/TR/#tr_HTML">HTML</a>, <a href="https://www.w3.org/TR/#tr_CSS">CSS</a></li>
+            <li><a href="https://developer.mozilla.org/ru/">MDN</a></li>
+            <li>Книги: <a href="http://shop.oreilly.com/category/browse-subjects/web-development/html-css.do" target="_blank">O'Reilly</a></li>
+            <li>Конференции:
+                <a href="http://www.youtube.com/user/wstdays" target="_blank">Веб-стандарты</a>,
+                <a href="https://vimeo.com/channels/cssday" target="_blank">CSS Day</a>,
+                <a href="https://vimeo.com/fronteers" target="_blank">Fronteers</a>
+            </li>
+            <li>Блоги:
+                <a href="http://habrahabr.ru/posts/frontend/" target="_blank">Habrahabr</a>,
+                <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a>,
+                <a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a>,
+                <a href="http://alistapart.com/" target="_blank">A LIST APART</a>
+            </li>
 		</ul>
 	</section>
+    <section class="slide">
+        <h2 class="shout">HTML</h2>
+    </section>
 	<section class="slide">
 		<h2>Структура HTML-документа</h2>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code>&lt;html lang="ru"&gt;</code>
+			<code>    &lt;head&gt;</code>
+			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
+			<code>    &lt;/head&gt;</code>
+            <code>    &lt;body&gt;&lt;/body&gt;</code>
+            <code>&lt;/html&gt;</code>
+		</pre>
 	</section>
+    <section class="slide">
+        <h2>Структура HTML-документа</h2>
+        <pre>
+            <code><mark>&lt;!DOCTYPE html&gt;</mark></code>
+            <code>&lt;html lang="ru"&gt;</code>
+			<code>    &lt;head&gt;</code>
+			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
+			<code>    &lt;/head&gt;</code>
+            <code>    &lt;body&gt;&lt;/body&gt;</code>
+            <code>&lt;/html&gt;</code>
+		</pre>
+    </section>
+    <section class="slide">
+        <h2>Структура HTML-документа</h2>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code><mark>&lt;html lang="ru"&gt;</mark></code>
+			<code>    &lt;head&gt;</code>
+			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
+			<code>    &lt;/head&gt;</code>
+            <code>    &lt;body&gt;&lt;/body&gt;</code>
+            <code><mark>&lt;/html&gt;</mark></code>
+		</pre>
+    </section>
+    <section class="slide">
+        <h2>Структура HTML-документа</h2>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code>&lt;html lang="ru"&gt;</code>
+			<code>    <mark>&lt;head&gt;</mark></code>
+			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
+			<code>    <mark>&lt;/head&gt;</mark></code>
+            <code>    &lt;body&gt;&lt;/body&gt;</code>
+            <code>&lt;/html&gt;</code>
+		</pre>
+    </section>
+    <section class="slide">
+        <h2>Структура HTML-документа</h2>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code>&lt;html lang="ru"&gt;</code>
+			<code>    &lt;head&gt;</code>
+			<code>        <mark>&lt;title&gt;Название документа&lt;/title&gt;</mark></code>
+			<code>    &lt;/head&gt;</code>
+            <code>    &lt;body&gt;&lt;/body&gt;</code>
+            <code>&lt;/html&gt;</code>
+		</pre>
+    </section>
+    <section class="slide">
+        <h2>Структура HTML-документа</h2>
+        <pre>
+            <code>&lt;!DOCTYPE html&gt;</code>
+            <code>&lt;html lang="ru"&gt;</code>
+			<code>    &lt;head&gt;</code>
+			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
+			<code>    &lt;/head&gt;</code>
+            <code>    <mark>&lt;body&gt;&lt;/body&gt;</mark></code>
+            <code>&lt;/html&gt;</code>
+		</pre>
+    </section>
+    <section class="slide">
+        <h2>DOCTYPE</h2>
+        <p>Это инструкция, которая говорит браузеру, с использованием какой версии <mark>HTML</mark> написан данный документ.
+            <mark>&lt;!DOCTYPE&gt;</mark> должнен быть объявлен в первой строке документа, до тега <mark>&lt;html&gt;</mark>.
+        </p>
+    </section>
+    <section class="slide">
+        <h2>HEAD</h2>
+        <p>Контейнер для метаданных. Следующие теги описывают метаданные:</p>
+        <ul lang="ru">
+            <li>&lt;title&gt;</li>
+            <li>&lt;style&gt;</li>
+            <li>&lt;meta&gt;</li>
+            <li>&lt;link&gt;</li>
+            <li>&lt;script&gt;</li>
+            <li>&lt;base&gt;</li>
+        </ul>
+    </section>
+    <section class="slide">
+        <h2><a href="http://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">Основные теги</a></h2>
+    </section>
 	<section class="slide">
 		<h2>Семантика HTML-документа</h2>
-	</section>
-	<section class="slide">
-		<h2>Основные теги</h2>
 	</section>
 	<section class="slide">
 		<h2>Виды CSS-селекторов</h2>
