@@ -1,0 +1,18 @@
+#cover {
+    background-image: url(../pictures/logo.svg), url(../pictures/cover.jpg);
+    background-size: 250px, cover;
+    background-repeat: no-repeat;
+    background-position: right 50px bottom 50px, 0 0;
+    padding: 50px;
+}
+
+#cover h2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    letter-spacing: 3px;
+    text-shadow: 0 6px 0 rgba(0, 0, 0, 0.7);
+    font-size: 80px;
+    padding: 50px;
+    width: 830px;
+    line-height: 100px;
+}
