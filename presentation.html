@@ -1,239 +1,298 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-	<title>Введение в HTML и CSS</title>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="styles/screen-16x10.css">
-	<link rel="stylesheet" href="styles/theme.css">
-	<link rel="stylesheet" href="styles/style.css">
+    <title>Введение в HTML и CSS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/screen-16x10.css">
 </head>
 <body class="shower list">
-	<header class="caption">
-		<h1>Фронтенд разработка: HTML и CSS</h1>
-		<p><a href="mailto:Margarita_Kurdyumova@epam.com">Маргарита Курдюмова</a>, EPAM Systems</p>
-	</header>
-	<section class="slide white" id="cover">
-		<h2>Фронтенд разработка:<br>HTML и CSS</h2>
-	</section>
-	<section class="slide">
-		<h2 class="shout">Инструменты</h2>
-	</section>
-	<section class="slide">
-		<h2>Текстовые редакторы и IDE</h2>
-		<ul lang="ru">
-			<li><a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a></li>
-			<li><a href="http://brackets.io/" target="_blank">Brackets</a></li>
-			<li><a href="https://atom.io/" target="_blank">Atom</a></li>
-			<li><a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a></li>
-		</ul>
-	</section>
-	<section class="slide">
-        <p><strong>IDE</strong> <i>(англ. Integrated development environment)</i> — интегрированная среда разработки, включает в себя:
-            текстовый редактор, компилятор и/или интерпретатор, средства автоматизации сборки, отладчик, средства для интеграции с системами контроля версий и т.д.</p>
-        <ul lang="ru">
-            <li><a href="https://www.jetbrains.com/webstorm/" target="_blank"><strong>WebStorm</strong></a>, бесплатная лицензия <a href="https://www.jetbrains.com/student/" target="_blank">для студентов и преподавателей</a> и
-                <a href="https://www.jetbrains.com/buy/classroom/?product=webstorm" target="_blank">для оснащения учебных классов</a></li>
-        </ul>
-	</section>
-	<section class="slide">
-		<h2>Инструменты разработчика в браузерах</h2>
-        <ul lang="ru">
-            <li><a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a></li>
-            <li><a href="https://developer.mozilla.org/en/docs/Tools" target="_blank">Firefox Developer Tools</a></li>
-            <li><a href="https://dev.windows.com/en-us/microsoft-edge/platform/documentation/f12-devtools-guide/" target="_blank">Microsoft Edge Developer Tools</a></li>
-        </ul>
-        <p>Запускаются в браузере по нажатию на <mark>F12</mark></p>
-	</section>
-	<section class="slide">
-		<h2>Adobe Photoshop</h2>
-		<p>Фронтэнд разработчику необходимы знания Photoshop на уровне работы с макетами дизайна, в основном это <i>работа со слоями и манипулирование текстом</i>.</p>
-        <p><a href="https://docs.google.com/document/d/1z28AGlCm2irowVAp5quLSC0nkFo9VIJDhVEfxXGQAM8/edit" target="_blank">Уроки</a></p>
-	</section>
-	<section class="slide">
-		<h2>Источники информации</h2>
-		<ul lang="ru">
-			<li>Спецификации <a href="https://www.w3.org/" target="_blank">W3C</a>: <a href="https://www.w3.org/TR/#tr_HTML">HTML</a>, <a href="https://www.w3.org/TR/#tr_CSS">CSS</a></li>
-            <li><a href="https://developer.mozilla.org/ru/">MDN</a></li>
-            <li>Книги: <a href="http://shop.oreilly.com/category/browse-subjects/web-development/html-css.do" target="_blank">O'Reilly</a></li>
-            <li>Конференции:
-                <a href="http://www.youtube.com/user/wstdays" target="_blank">Веб-стандарты</a>,
-                <a href="https://vimeo.com/channels/cssday" target="_blank">CSS Day</a>,
-                <a href="https://vimeo.com/fronteers" target="_blank">Fronteers</a>
-            </li>
-            <li>Блоги:
-                <a href="http://habrahabr.ru/posts/frontend/" target="_blank">Habrahabr</a>,
-                <a href="https://css-tricks.com/" target="_blank">CSS-TRICKS</a>,
-                <a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a>,
-                <a href="http://alistapart.com/" target="_blank">A LIST APART</a>
-            </li>
-		</ul>
-	</section>
-    <section class="slide">
-        <h2 class="shout">HTML</h2>
-    </section>
-	<section class="slide">
-		<h2>Структура HTML-документа</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code>&lt;html lang="ru"&gt;</code>
-			<code>    &lt;head&gt;</code>
-			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
-			<code>    &lt;/head&gt;</code>
-            <code>    &lt;body&gt;&lt;/body&gt;</code>
-            <code>&lt;/html&gt;</code>
-		</pre>
-	</section>
-    <section class="slide">
-        <h2>Структура HTML-документа</h2>
-        <pre>
-            <code><mark>&lt;!DOCTYPE html&gt;</mark></code>
-            <code>&lt;html lang="ru"&gt;</code>
-			<code>    &lt;head&gt;</code>
-			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
-			<code>    &lt;/head&gt;</code>
-            <code>    &lt;body&gt;&lt;/body&gt;</code>
-            <code>&lt;/html&gt;</code>
-		</pre>
-    </section>
-    <section class="slide">
-        <h2>Структура HTML-документа</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code><mark>&lt;html lang="ru"&gt;</mark></code>
-			<code>    &lt;head&gt;</code>
-			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
-			<code>    &lt;/head&gt;</code>
-            <code>    &lt;body&gt;&lt;/body&gt;</code>
-            <code><mark>&lt;/html&gt;</mark></code>
-		</pre>
-    </section>
-    <section class="slide">
-        <h2>Структура HTML-документа</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code>&lt;html lang="ru"&gt;</code>
-			<code>    <mark>&lt;head&gt;</mark></code>
-			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
-			<code>    <mark>&lt;/head&gt;</mark></code>
-            <code>    &lt;body&gt;&lt;/body&gt;</code>
-            <code>&lt;/html&gt;</code>
-		</pre>
-    </section>
-    <section class="slide">
-        <h2>Структура HTML-документа</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code>&lt;html lang="ru"&gt;</code>
-			<code>    &lt;head&gt;</code>
-			<code>        <mark>&lt;title&gt;Название документа&lt;/title&gt;</mark></code>
-			<code>    &lt;/head&gt;</code>
-            <code>    &lt;body&gt;&lt;/body&gt;</code>
-            <code>&lt;/html&gt;</code>
-		</pre>
-    </section>
-    <section class="slide">
-        <h2>Структура HTML-документа</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code>&lt;html lang="ru"&gt;</code>
-			<code>    &lt;head&gt;</code>
-			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
-			<code>    &lt;/head&gt;</code>
-            <code>    <mark>&lt;body&gt;&lt;/body&gt;</mark></code>
-            <code>&lt;/html&gt;</code>
-		</pre>
-    </section>
-    <section class="slide">
-        <h2>DOCTYPE</h2>
-        <p>Это инструкция, которая говорит браузеру, с использованием какой версии <code>HTML</code> написан данный документ.
-            <code>&lt;!DOCTYPE&gt;</code> должнен быть объявлен в первой строке документа, до тега <code>&lt;html&gt;</code>.
-        </p>
-    </section>
-    <section class="slide">
-        <h2>HEAD</h2>
-        <p>Контейнер для метаданных. Следующие теги описывают метаданные:</p>
-
-            <ul lang="ru">
-                <li><code>&lt;title&gt;</code></li>
-                <li><code>&lt;style&gt;</code></li>
-                <li><code>&lt;meta&gt;</code></li>
-                <li><code>&lt;link&gt;</code></li>
-                <li><code>&lt;script&gt;</code></li>
-                <li><code>&lt;base&gt;</code></li>
+<header class="caption">
+    <h1>Введение в HTML и CSS</h1>
+    <p><a href="">Маргарита Курдюмова</a>, EPAM Systems</p>
+</header>
+<section class="slide white" id="cover">
+    <img src="pictures/logo.png" alt="" class="cover">
+    <h2>Введение в HTML и CSS</h2>
+</section>
+<section class="slide">
+    <h2>Inline Elements</h2>
+    <p>Retro meh brunch <a href="">aesthetic</a> Cosby sweater Shoreditch. Banksy Tumblr <strong>sriracha</strong>, flexitarian pug chia master cleanse vinyl <em>wayfarers</em> fanny pack bespoke Helvetica <b>roof</b> party. Messenger bag retro cred <i>Portland</i> next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag, <mark>leggings</mark> skateboard literally<sup>1</sup> bicycle rights H<sub>2</sub>0 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical <code>&lt;paleo&gt;</code> you probably haven’t heard of.</p>
+    <footer class="footer">
+        <p>Retro meh brunch <a href="">aesthetic</a> Cosby sweater Shoreditch. Banksy Tumblr <strong>sriracha</strong>, flexitarian pug chia master cleanse vinyl <em>wayfarers</em> fanny pack bespoke Helvetica <b>roof</b> party. Messenger bag retro cred <i>Portland</i> next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag, <mark>leggings</mark> skateboard literally<sup>1</sup> bicycle rights H<sub>2</sub>0 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical <code>&lt;paleo&gt;</code> you probably haven’t heard of.</p>
+    </footer>
+</section>
+<section class="slide">
+    <h2>Columns</h2>
+    <p class="double">Echo Park 8-bit sustainable umami deep v Kickstarter. DIY cliche typewriter brunch, Odd Future sriracha pickled aesthetic. Farm-to-table bespoke fingerstache, kale chips umami brunch American Apparel letterpress. Whatever authentic disrupt, you probably haven't heard of them direct trade mlkshk Etsy. Gluten-free roof party plaid American Apparel four loko quinoa. Echo Park 8-bit sustainable.</p>
+</section>
+<section class="slide">
+    <h2>Quotes</h2>
+    <blockquote>
+        <p>Flannel bicycle rights locavore selfies skateboard. Authentic fanny pack paleo four loko bespoke. Artisan tattooed chia XOXO ennui, lomo disrupt 8-bit art party Tumblr scenester.</p>
+    </blockquote>
+    <figure>
+        <blockquote>
+            <p>Post-ironic fashion axe flexitarian, Tonx narwhal messenger bag Tumblr. Portland gentrify deep v kale chips literally.</p>
+        </blockquote>
+        <figcaption>Yours Truly</figcaption>
+    </figure>
+</section>
+<section class="slide">
+    <h2>Nested Lists</h2>
+    <ol>
+        <li>Literally viral vegan, ugh drinking vinegar photo booth</li>
+        <li>Wes Anderson chillwave Marfa pour-over Etsy banh mi</li>
+        <li>Ethnic polaroid lo-fi iPhone ennui
+            <ul>
+                <li>Yr wayfarers before they sold out Kickstarter asymmetrical</li>
+                <li>Irony flexitarian readymade quinoa, kogi bespoke meggings narwhal</li>
+                <li>Skateboard Etsy twee artisan Echo Park</li>
             </ul>
-
-    </section>
-    <section class="slide">
-        <h2><a href="http://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">Основные теги</a></h2>
-        <table class="striped">
-            <tr>
-                <td>Заголовки</td>
-                <td>&lt;h1&gt; — &lt;h6&gt;</td>
-            </tr>
-            <tr>
-                <td>Формы</td>
-                <td>&lt;form&gt;, &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;, &lt;label&gt;, ...</td>
-            </tr>
-            <tr>
-                <td>Изображения</td>
-                <td>&lt;img&gt;, &lt;canvas&gt;, ...</td>
-            </tr>
-            <tr>
-                <td>Ссылки</td>
-                <td>&lt;a&gt;, &lt;nav&gt;, ...</td>
-            </tr>
-            <tr>
-                <td>Списки</td>
-                <td>&lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;, ...</td>
-            </tr>
-            <tr>
-                <td>Таблицы</td>
-                <td>&lt;table&gt;, &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;, ...</td>
-            </tr>
-            <tr>
-                <td>Семантические</td>
-                <td>&lt;header&gt;, &lt;footer&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, ...</td>
-            </tr>
-        </table>
-    </section>
-	<section class="slide">
-		<h2>Семантика HTML-документа</h2>
-        <figure>
-            <blockquote>
-                <p><strong>Семантическая вёрстка, или семантический HTML-код,</strong> — это подход к созданию веб-страниц на языке HTML, основанный на использовании HTML-тегов в соответствии с их семантикой (предназначением), а также предполагающий логичную и последовательную иерархию страницы. Он противопоставляется подходу, при котором написание HTML-кода определяется внешним видом веб-страницы.</p>
-            </blockquote>
-            <figurecaption>
-                <a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B2%D1%91%D1%80%D1%81%D1%82%D0%BA%D0%B0" target="_blank">Wikipedia</a>
-            </figurecaption>
-        </figure>
-	</section>
-    <section class="slide">
-        <h2 class="shout">CSS</h2>
-    </section>
-	<section class="slide">
-		<h2>Виды CSS-селекторов</h2>
-	</section>
-	<section class="slide">
-		<h2>Единицы измерения в CSS</h2>
-	</section>
-	<section class="slide">
-		<h2>Основные CSS-свойства</h2>
-	</section>
-	<section class="slide">
-		<h2>Инлайновый контекст</h2>
-	</section>
-	<section class="slide">
-		<h2>Блочный контекст</h2>
-	</section>
-    <section class="slide">
-        <h2>Позиционирование</h2>
-    </section>
-    <section class="slide">
-        <h2>z-index</h2>
-    </section>
-	<div class="progress"></div>
-	<script src="js/shower.min.js"></script>
+        </li>
+        <li>Tonx kitsch fingerstache readymade, retro single-origin coffee</li>
+    </ol>
+</section>
+<section class="slide">
+    <h2>Block Lists</h2>
+    <ul>
+        <li>Retro meh brunch aesthetic Cosby sweater Shoreditch. Banksy Tumblr sriracha, flexitarian pug chia master cleanse vinyl wayfarers fanny pack.</li>
+        <li>Messenger bag retro cred Portland next level. Yr stumptown Schlitz Carles deep v small batch. Hella sustainable messenger bag.</li>
+        <li>Leggings skateboard literally1 bicycle rights H20 mumblecore banh mi DIY VHS. Semiotics four loko street art asymmetrical. Asymmetrical paleo you probably haven’t heard of.</li>
+    </ul>
+</section>
+<section class="slide">
+    <h2>Latin and Cyrillic List Bullets</h2>
+    <ul lang="en">
+        <li>Occupy locavore blog, mustache you probably haven't heard of them</li>
+        <li>Skateboard pork belly aesthetic hoodie selfies brunch</li>
+        <li>Food truck gluten-free disrupt Portland</li>
+    </ul>
+    <ul lang="ru">
+        <li>Helvetica narwhal drinking vinegar chillwave, post-ironic ennui</li>
+        <li>Cray pug paleo retro, Echo Park narwhal Wes Anderson</li>
+        <li>Disrupt Williamsburg fixie, shabby chic bicycle rights hashtag kogi</li>
+    </ul>
+</section>
+<section class="slide">
+    <h2>Simple Table</h2>
+    <table>
+        <tr>
+            <th scope="col">Gentrify</th>
+            <th>Twee</th>
+            <th>Artisan</th>
+            <th>Banksy</th>
+        </tr>
+        <tr>
+            <th scope="row">Messenger</th>
+            <td>Mixtape</td>
+            <td>Small batch</td>
+            <td>Bicycle rights</td>
+        </tr>
+        <tr>
+            <th scope="row">Meggings</th>
+            <td>Freegan</td>
+            <td>Retro biodiesel</td>
+            <td>Slow-carb</td>
+        </tr>
+        <tr>
+            <th scope="row">Vegan</th>
+            <td>Occupy</td>
+            <td>Normcore</td>
+            <td>Put a bird on it</td>
+        </tr>
+        <tr>
+            <th scope="row">Next level</th>
+            <td>Selfies</td>
+            <td>Sustainable</td>
+            <td>Organic</td>
+        </tr>
+        <tr>
+            <th scope="row">Umami</th>
+            <td>Asymmetrical</td>
+            <td>Keytar</td>
+            <td>Craft beer</td>
+        </tr>
+        <tr>
+            <th scope="row">Biodiesel</th>
+            <td>Haven’t heard</td>
+            <td>Skateboard</td>
+            <td>Farm-to-table</td>
+        </tr>
+    </table>
+</section>
+<section class="slide">
+    <h2>Striped Table</h2>
+    <table class="striped">
+        <tr>
+            <th scope="col">Gentrify</th>
+            <th>Twee</th>
+            <th>Artisan</th>
+            <th>Banksy</th>
+        </tr>
+        <tr>
+            <th scope="row">Messenger</th>
+            <td>Mixtape</td>
+            <td>Small batch</td>
+            <td>Bicycle rights</td>
+        </tr>
+        <tr>
+            <th scope="row">Meggings</th>
+            <td>Freegan</td>
+            <td>Retro biodiesel</td>
+            <td>Slow-carb</td>
+        </tr>
+        <tr>
+            <th scope="row">Vegan</th>
+            <td>Occupy</td>
+            <td>Normcore</td>
+            <td>Put a bird on it</td>
+        </tr>
+        <tr>
+            <th scope="row">Next level</th>
+            <td>Selfies</td>
+            <td>Sustainable</td>
+            <td>Organic</td>
+        </tr>
+        <tr>
+            <th scope="row">Umami</th>
+            <td>Asymmetrical</td>
+            <td>Keytar</td>
+            <td>Craft beer</td>
+        </tr>
+        <tr>
+            <th scope="row">Biodiesel</th>
+            <td>Haven’t heard</td>
+            <td>Skateboard</td>
+            <td>Farm-to-table</td>
+        </tr>
+    </table>
+</section>
+<section class="slide">
+    <h2>Plain Code Listing</h2>
+		<pre><code>&lt;html lang="en"&gt;
+            <mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark>
+            &lt;title&gt;Shower&lt;/title&gt;
+            &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;
+            &lt;link rel="stylesheet" href="screen.css"&gt;
+            &lt;script src="script.js"&gt;&lt;/script&gt;
+            <mark>&lt;/head&gt;</mark></code></pre>
+</section>
+<section class="slide">
+    <h2>Numbered Code Listing</h2>
+		<pre>
+			<code>&lt;html lang="en"&gt;</code>
+			<code><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
+			<code>	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code>	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code><mark>&lt;/head&gt;</mark></code>
+		</pre>
+</section>
+<section class="slide">
+    <h2>Highlighted Code Lines</h2>
+		<pre>
+			<code>&lt;html lang="en"&gt;</code>
+			<code class="mark">&lt;head&gt; <mark class="comment">&lt;!--Comment--&gt;</mark></code>
+			<code>	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code>	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code class="mark">&lt;/head&gt;</code>
+		</pre>
+</section>
+<section class="slide">
+    <h2>Hidden Code Steps</h2>
+		<pre>
+			<code class="next">&lt;html lang="en"&gt;</code>
+			<code class="next"><mark>&lt;head&gt;</mark> <mark class="comment">&lt;!--Comment--&gt;</mark></code>
+			<code class="next">	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code class="next">	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code class="next">	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code class="next">	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code class="next"><mark>&lt;/head&gt;</mark></code>
+		</pre>
+</section>
+<section class="slide">
+    <h2>Highlighted Code Steps</h2>
+		<pre>
+			<code class="mark next">&lt;html lang="en"&gt;</code>
+			<code>&lt;head&gt; <mark class="comment">&lt;!--Comment--&gt;</mark></code>
+			<code class="mark next">	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code class="mark next">	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code class="mark next">&lt;/head&gt;</code>
+		</pre>
+</section>
+<section class="slide grid">
+    <h2>Grid Slide</h2>
+</section>
+<section class="slide white">
+    <h2>White Slide</h2>
+</section>
+<section class="slide black">
+    <h2>Black Slide</h2>
+</section>
+<section class="slide">
+    <h2 class="shout">Shout</h2>
+</section>
+<section class="slide">
+    <h2 class="shout">Multiline<br>Shout</h2>
+</section>
+<section class="slide">
+    <h2 class="shout"><a href="">Linked Shout</a></h2>
+</section>
+<section class="slide">
+    <h2 class="shout grow">Growing Shout</h2>
+</section>
+<section class="slide">
+    <h2 class="shout shrink">Shrinking Shout</h2>
+</section>
+<section class="slide">
+    <figure>
+        <img src="pictures/exact.png" alt="" class="cover">
+        <figcaption class="white">Copyright © 2015 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
+    </figure>
+</section>
+<section class="slide">
+    <img src="pictures/tall.png" alt="" class="cover">
+</section>
+<section class="slide">
+    <img src="pictures/wide.png" alt="" class="cover">
+</section>
+<section class="slide white">
+    <img src="pictures/square.png" alt="" class="place top left">
+    <img src="pictures/square.png" alt="" class="place top">
+    <img src="pictures/square.png" alt="" class="place top right">
+    <img src="pictures/square.png" alt="" class="place left">
+    <img src="pictures/square.png" alt="" class="place">
+    <img src="pictures/square.png" alt="" class="place right">
+    <img src="pictures/square.png" alt="" class="place bottom left">
+    <img src="pictures/square.png" alt="" class="place bottom">
+    <img src="pictures/square.png" alt="" class="place bottom right">
+</section>
+<section class="slide" data-timing="00:03">
+    <h2 class="shout">Timer</h2>
+</section>
+<section class="slide">
+    <h2>List Navigation</h2>
+    <ol>
+        <li>Ennui keffiyeh thundercats</li>
+        <li class="next">Jean shorts biodiesel</li>
+        <li class="next">Terry richardson, swag blog</li>
+        <li class="next">Locavore umami vegan helvetica</li>
+        <li class="next">Fingerstache kale chips</li>
+    </ol>
+    <p class="next">Before they sold out master</p>
+</section>
+<div class="progress"></div>
+<footer class="badge">
+    <a href="https://github.com/shower/shower">Fork me on Github</a>
+</footer>
+<script src="js/shower.min.js"></script>
+<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
 </body>
 </html>
