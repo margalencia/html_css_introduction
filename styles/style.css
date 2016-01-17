@@ -16,3 +16,15 @@
     width: 830px;
     line-height: 100px;
 }
+
+table.specificity {
+    margin-left: 0;
+    width: 500px;
+    table-layout: fixed;
+}
+
+table.specificity td {
+    text-align: center;
+    width: 12.5%;
+    padding: 0 !important;
+}

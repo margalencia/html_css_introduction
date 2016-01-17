@@ -27,6 +27,10 @@
 		<li><a href="http://brackets.io/" target="_blank">Brackets</a></li>
 		<li><a href="https://atom.io/" target="_blank">Atom</a></li>
 		<li><a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a></li>
+		<li>Онлайн сервисы для сниппетов:
+			<a href="https://jsfiddle.net/" target="_blank">jsfiddle</a>,
+			<a href="http://codepen.io/" target="_blank">codepen</a>
+		</li>
 	</ul>
 </section>
 <section class="slide">
@@ -57,6 +61,7 @@
 		<li>Спецификации <a href="https://www.w3.org/" target="_blank">W3C</a>: <a href="https://www.w3.org/TR/#tr_HTML">HTML</a>, <a href="https://www.w3.org/TR/#tr_CSS">CSS</a></li>
 		<li><a href="https://developer.mozilla.org/ru/">MDN</a></li>
 		<li>Книги: <a href="http://shop.oreilly.com/category/browse-subjects/web-development/html-css.do" target="_blank">O'Reilly</a></li>
+		<li>Онлайн учебники: <a href="http://htmlbook.ru/samhtml" target="_blank">htmlbook.ru</a></li>
 		<li>Конференции:
 			<a href="http://www.youtube.com/user/wstdays" target="_blank">Веб-стандарты</a>,
 			<a href="https://vimeo.com/channels/cssday" target="_blank">CSS Day</a>,
@@ -141,27 +146,27 @@
 </section>
 <section class="slide">
 	<h2>Структура HTML-документа</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code>&lt;html lang="ru"&gt;</code>
-			<code>    &lt;head&gt;</code>
-			<code>        <mark>&lt;title&gt;Название документа&lt;/title&gt;</mark></code>
-			<code>    &lt;/head&gt;</code>
-            <code>    &lt;body&gt;&lt;/body&gt;</code>
-            <code>&lt;/html&gt;</code>
-		</pre>
+    <pre>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html lang="ru"&gt;</code>
+        <code>    &lt;head&gt;</code>
+        <code>        <mark>&lt;title&gt;Название документа&lt;/title&gt;</mark></code>
+        <code>    &lt;/head&gt;</code>
+        <code>    &lt;body&gt;&lt;/body&gt;</code>
+        <code>&lt;/html&gt;</code>
+    </pre>
 </section>
 <section class="slide">
 	<h2>Структура HTML-документа</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code>&lt;html lang="ru"&gt;</code>
-			<code>    &lt;head&gt;</code>
-			<code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
-			<code>    &lt;/head&gt;</code>
-            <code>    <mark>&lt;body&gt;&lt;/body&gt;</mark></code>
-            <code>&lt;/html&gt;</code>
-		</pre>
+    <pre>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html lang="ru"&gt;</code>
+        <code>    &lt;head&gt;</code>
+        <code>        &lt;title&gt;Название документа&lt;/title&gt;</code>
+        <code>    &lt;/head&gt;</code>
+        <code>    <mark>&lt;body&gt;&lt;/body&gt;</mark></code>
+        <code>&lt;/html&gt;</code>
+    </pre>
 </section>
 <section class="slide">
 	<h2><a href="http://www.w3schools.com/tags/ref_byfunc.asp" target="_blank">Основные теги</a></h2>
@@ -207,30 +212,149 @@
 		</figcaption>
 	</figure>
 </section>
-<!--<section class="slide">-->
-<!--<h2 class="shout">CSS</h2>-->
-<!--</section>-->
-<!--<section class="slide">-->
-<!--<h2>Виды CSS-селекторов</h2>-->
-<!--</section>-->
-<!--<section class="slide">-->
-<!--<h2>Единицы измерения в CSS</h2>-->
-<!--</section>-->
-<!--<section class="slide">-->
-<!--<h2>Основные CSS-свойства</h2>-->
-<!--</section>-->
-<!--<section class="slide">-->
-<!--<h2>Инлайновый контекст</h2>-->
-<!--</section>-->
-<!--<section class="slide">-->
-<!--<h2>Блочный контекст</h2>-->
-<!--</section>-->
-<!--<section class="slide">-->
-<!--<h2>Позиционирование</h2>-->
-<!--</section>-->
-<!--<section class="slide">-->
-<!--<h2>z-index</h2>-->
-<!--</section>-->
+<section class="slide">
+<h2 class="shout">CSS</h2>
+</section>
+<section class="slide">
+    <h2><a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Виды CSS-селекторов</a></h2>
+	<table class="striped">
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/universalnyy-selektor" target="_blank">Универсальный селектор</a></td>
+            <td><code>*</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/identifikatory" target="_blank">Селектор идентификатора</a></td>
+            <td><code>#id</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/klassy" target="_blank">Селектор класса</a></td>
+            <td><code>.class</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/selektory-tegov" target="_blank">Селектор элемента</a></td>
+            <td><code>p</code> <code>p, div</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/kontekstnye-selektory" target="_blank">Контекстный селектор (вложенный)</a></td>
+            <td><code>div p</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://www.w3schools.com/cssref/sel_gen_sibling.asp" target="_blank">element1~element2 Selector</a></td>
+            <td><code>div ~ p</code></td>
+        </tr>
+    </table>
+</section>
+<section class="slide">
+    <h2><a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Виды CSS-селекторов</a></h2>
+    <table class="striped">
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/dochernie-selektory" target="_blank">Дочерний селектор</a></td>
+            <td><code>div > p</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/sosednie-selektory" target="_blank">Соседний селектор</a></td>
+            <td><code>div + p</code></td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/selektory-atributov" target="_blank">Селектор атрибута</a></td>
+            <td><code>[attribute]</code> <code>[attribute=value]</code>, ...</td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/psevdoklassy" target="_blank">Селектор псевдокласса</a></td>
+            <td><code>:focus</code>, <code>:checked</code>, <code>:first-child</code>, ...</td>
+        </tr>
+        <tr>
+            <td><a href="http://htmlbook.ru/samcss/psevdoelementy" target="_blank">Селектор псевдоэлемента</a></td>
+            <td><code>::after</code>, <code>::before</code>, <code>::first-letter</code>, ...</td>
+        </tr>
+    </table>
+</section>
+<section class="slide">
+    <h2>Специфичность CSS-селекторов</h2>
+    <p>Статья <a href="http://habrahabr.ru/post/137588/" target="_blank">Взвешиваем селекторы CSS</a></p>
+    <table class="specificity">
+        <tr>
+            <td>8</td>
+            <td>7</td>
+            <td>6</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><code>0</code></td>
+            <td><code>0</code></td>
+            <td><code>0</code></td>
+            <td><code>0</code></td>
+            <td><code>0</code></td>
+            <td><code>0</code></td>
+            <td><code>0</code></td>
+            <td><code>0</code></td>
+        </tr>
+    </table>
+    <ul lang="en" class="double">
+        <li>1 — элемент, псевдоэлемент</li>
+        <li>2 — класс, псевдокласс, атрибут</li>
+        <li>3 — идентификатор</li>
+        <li>4 — инлайновый стиль написанный в атрибуте style=””</li>
+        <li>5, 6, 7, 8 — это 1—4 с !important</li>
+    </ul>
+</section>
+<section class="slide">
+    <h2 class="shout"><a href="http://www.w3schools.com/cssref/default.asp" target="_blank">CSS-свойства</a></h2>
+</section>
+<section class="slide">
+    <h2><a href="http://www.w3schools.com/cssref/css_units.asp" target="_blank">Единицы измерения в CSS</a></h2>
+    <table class="striped">
+        <tr>
+            <td>px</td>
+            <td>1px — один пиксель на экране</td>
+        </tr>
+        <tr>
+            <td>em</td>
+            <td>Считается относительно элемента</td>
+        </tr>
+        <tr>
+            <td>rem</td>
+            <td>Считается относительно корня документа</td>
+        </tr>
+        <tr>
+            <td>vh, vw</td>
+            <td>1% высоты (ширины) вьюпорта</td>
+        </tr>
+        <tr>
+            <td>vmin, vmax</td>
+            <td>1% минимального (максимального) размера вьюпорта</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td></td>
+        </tr>
+    </table>
+    <p><a href="https://learn.javascript.ru/css-units" target="_blank">Единицы измерения: "px", "em", "rem" и другие</a></p>
+</section>
+<section class="slide">
+    <h2><a href="http://www.w3schools.com/css/css_boxmodel.asp">Блочная модель</a></h2>
+    <img src="pictures/box-model.gif" alt="Блочная модель" style="margin: 0 auto; display: block; margin-top: 80px;">
+</section>
+<section class="slide">
+<h2>Инлайновый контекст</h2>
+</section>
+<section class="slide">
+<h2>Блочный контекст</h2>
+</section>
+<section class="slide">
+<h2>Позиционирование</h2>
+</section>
+<section class="slide">
+<h2>z-index</h2>
+</section>
+<section class="slide">
+    <h2>Примеры</h2>
+    <a href="https://jsfiddle.net/margalencia/4pbu942r/3/" target="_blank">Кнопка</a>
+</section>
 <div class="progress"></div>
 <script src="js/shower.min.js"></script>
 </body>
